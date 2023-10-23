@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{% trans %}About Us{% endtrans %}{% endblock %}
+{% block content %}
+<div class="--content mt-5">
+    <div class="sidebar">
+        {% include "sidebar.html" %}
+    </div>
+    <div class="main-content">
+        <h4>{% trans %}About Us{% endtrans %}</h4>
+        <p><a href="https://example.com">www.example.com</a> {% trans %}is an online unlimited freeconversion
+            website toolkit that allows any user to convert his/her any files whether; Document, Images, Videos,
+            Software, Ebook, Archives, Audio and hundreds of other tools available on our site.{% endtrans %}</p>
+        
+        <p> {% trans %}We believe that it is important to focus on core business competencies and let others do everything else.
+            This is why we are doing what we are best at doing: converting files. {% endtrans %}</p>
+
+        <p> {% trans %}We believe that data security is the most important good in our industry. 
+            This is why data protection and security have the highest priorities for us.{% endtrans %}</p>
+
+        <p> {% trans %}We believe in small, agile and unbureaucratic teams.{% endtrans %}</p>
+
+        <p>{% trans %}If you have any suggestion or want specific on demand converters on our site, please don&rsquo;t forget to
+            contact us at{% endtrans %}: <a href="mail@example.com">mail@example.com</a></p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1634 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-08-06 08:24+0500\n"
+"PO-Revision-Date: 2021-08-06 08:29+0500\n"
+"Last-Translator: \n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.0\n"
+
+#: app.py:156
+msgid "Please upload a file to convert."
+msgstr "Sube un archivo para convertir."
+
+#: app.py:161
+msgid "Sorry! currently we only support 10 files batch."
+msgstr "¡Lo siento! Actualmente solo admitimos 10 archivos por lotes."
+
+#: configs/definition.py:5
+msgid ""
+"Convert your images to the BMP format with this free online image converter. "
+"You can convert from over 120 source formats."
+msgstr ""
+"Convierta sus imágenes a formato BMP con este conversor de imágenes en línea "
+"gratuito. Puede convertir desde más de 120 formatos de origen."
+
+#: configs/definition.py:6
+msgid ""
+"Create an EPS file by converting your image with this free online image "
+"converter. It also allows to optionally select digital filters to enhance "
+"the quality of your images."
+msgstr ""
+"Cree un archivo EPS convirtiendo su imagen con este conversor de imágenes en "
+"línea gratuito. También permite seleccionar opcionalmente filtros digitales "
+"para mejorar la calidad de sus imágenes."
+
+#: configs/definition.py:7
+msgid ""
+"Free online image converter to convert images to the GIF format. Also "
+"supports conversion from video to animated GIFs."
+msgstr ""
+"Conversor de imágenes en línea gratuito para convertir imágenes al formato "
+"GIF. También admite la conversión de video a GIF animados."
+
+#: configs/definition.py:8
+msgid ""
+"Convert your image to the ICO format with this free online ICO conversion "
+"tool. You can also create a favicon.ico with this converter."
+msgstr ""
+"Convierta su imagen al formato ICO con esta herramienta gratuita de "
+"conversión ICO en línea. También puede crear un favicon.ico con este "
+"convertidor."
+
+#: configs/definition.py:9
+msgid ""
+"Convert your files from over 120 formats to a JPG image with this free "
+"online JPEG converter. Optionally apply digital effects."
+msgstr ""
+"Convierta sus archivos de más de 120 formatos a una imagen JPG con este "
+"conversor JPG en línea gratuito. Aplicar opcionalmente efectos digitales."
+
+#: configs/definition.py:10
+msgid ""
+"Convert image from over 120 image formats to PNG with this free online image "
+"converter. Optionally add digital effects to enhance the images."
+msgstr ""
+"Convierta imágenes de más de 120 formatos de imagen a PNG con este conversor "
+"de imágenes en línea gratuito. Opcionalmente, agregue efectos digitales para "
+"mejorar las imágenes."
+
+#: configs/definition.py:11
+msgid ""
+"Convert your image to the SVG format with this free online image converter. "
+"Additionally add effects to obtain high quality images."
+msgstr ""
+"Convierta su imagen al formato SVG con este conversor de imágenes en línea "
+"gratuito. Adicionalmente agregue efectos para obtener imágenes de alta "
+"calidad."
+
+#: configs/definition.py:12
+msgid ""
+"Free online image converter for converting all kinds of images to the TGA "
+"(Targa) format. Includes optional effect settings and digital filters."
+msgstr ""
+"Convierta imágenes online gratuito para convertir todo tipo de imágenes al "
+"formato TGA (Targa). Incluye ajustes de efectos opcionales y filtros "
+"digitales."
+
+#: configs/definition.py:13
+msgid ""
+"Convert your image to TIFF with this free online image converter. You can "
+"further apply digital filters to change their look. "
+msgstr ""
+"Convierta su imagen a TIFF con este conversor de imágenes en línea gratuito. "
+"Además, puede aplicar filtros digitales para cambiar su apariencia."
+
+#: configs/definition.py:14
+msgid ""
+"Convert your image to the WBMP format with this free online image converter. "
+"Optionally apply digital effects as needed to alter your image."
+msgstr ""
+"Convierta su imagen al formato WBMP con este convertidor de imágenes en "
+"línea gratuito. Opcionalmente, aplique efectos digitales según sea necesario "
+"para modificar la imagen."
+
+#: configs/definition.py:15
+msgid ""
+"This free online WebP converter allows you to convert images to the WebP "
+"standard from Google. Just upload a file or provide a URL and your WebP file "
+"can be downloaded immediately. "
+msgstr ""
+"Este convertidor webp en línea gratuito le permite convertir imágenes al "
+"estándar WebP de Google. Simplemente cargue un archivo o proporcione una URL "
+"y su archivo WebP se puede descargar inmediatamente. "
+
+#: configs/definition.py:17
+msgid ""
+"Create 7z compressed archives or convert existing archives to the 7z format "
+"with this free online archive generator."
+msgstr ""
+"Crear archivos comprimidos 7z o convertir archivos existentes al formato 7z "
+"con este generador de archivos en línea gratis."
+
+#: configs/definition.py:18
+msgid ""
+"Create 7z compressed archives or convert existing archives to the 7z format "
+"with this free online archive generator. "
+msgstr ""
+"Crear archivos comprimidos 7z o convertir archivos existentes al formato 7z "
+"con este generador de archivos en línea gratis. "
+
+#: configs/definition.py:19
+msgid ""
+"A free online archive generator that lets you compress your file or convert "
+"an archive to the TAR.BZ2 format. "
+msgstr ""
+"Un generador de archivos en línea gratuito que le permite comprimir su "
+"archivo o convertir un archivo al TAR. Formato BZ2. "
+
+#: configs/definition.py:20
+msgid ""
+"Create TAR.GZ archives or convert existing archives to TAR.GZ with this fast "
+"and free online converter. Just upload your file or provide a URL to start "
+"converting. "
+msgstr ""
+"Crear TAR. GZ archivos o convertir archivos existentes a TAR. GZ con este "
+"convertidor en línea rápido y gratuito. Simplemente cargue su archivo o "
+"proporcione una URL para comenzar a convertir. "
+
+#: configs/definition.py:21
+msgid ""
+"Use this free online tool to create a ZIP archive of your files or convert "
+"an archive to ZIP. Provide a URL or upload your file to start the "
+"conversion. "
+msgstr ""
+"Utilice esta herramienta en línea gratuita para crear un archivo ZIP de sus "
+"archivos o convertir un archivo a ZIP. Proporcione una dirección URL o "
+"cargue el archivo para iniciar la conversión. "
+
+#: configs/definition.py:23
+msgid ""
+"Free online AAC converter to convert audio or video to the AAC audio format. "
+"Free and fast providing high quality."
+msgstr ""
+"Convertidor AAC en línea gratuito para convertir audio o video al formato de "
+"audio AAC. Gratis y rápido proporcionando alta calidad."
+
+#: configs/definition.py:24
+msgid ""
+"Convert your audio files to AIFF with this free and fast online audio "
+"converter. Change settings to further enhance audio conversion."
+msgstr ""
+
+#: configs/definition.py:25
+msgid ""
+"Convert your music to the FLAC format with this free online audio converter. "
+"Choose additional options to further enhance quality."
+msgstr ""
+
+#: configs/definition.py:26
+msgid ""
+"Convert your music to the M4V format with this free online audio converter. "
+"Also allows to rip audio from video files."
+msgstr ""
+
+#: configs/definition.py:27
+msgid ""
+"Convert your music to the MMF ringtone format with this free online audio "
+"converter. Can also extract audio from video files."
+msgstr ""
+
+#: configs/definition.py:28
+msgid ""
+"Convert your audio or video files to MP3 audio with this free online MP3 "
+"converter. Great quality for music conversion. You can also extract MP3 from "
+"video files."
+msgstr ""
+
+#: configs/definition.py:29
+msgid ""
+"Convert your audio files to the OGG format with this free online OGG "
+"converter. By uploading a video file you can also extract the audio track to "
+"OGG."
+msgstr ""
+
+#: configs/definition.py:30
+msgid ""
+"Convert your files to the new OPUS audio format with this free online audio "
+"converter. Choose among several settings to obtain high quality results."
+msgstr ""
+
+#: configs/definition.py:31
+msgid ""
+"Convert your audio to the WAV format with this free online WAV converter. "
+"You can optionally extract audio tracks from video and convert them to WAV. "
+msgstr ""
+
+#: configs/definition.py:32
+msgid ""
+"Convert your audio to the Microsoft WMA format with this free online WMA "
+"converter. Optionally upload video files to strip the audio track from the "
+"video track and convert it to WMA. "
+msgstr ""
+
+#: configs/definition.py:34
+msgid ""
+"Convert your video files to the 3G2 format with this free online video "
+"converter. Change settings to enhance your 3G2 video. High quality."
+msgstr ""
+
+#: configs/definition.py:35
+msgid ""
+"Convert your video files to 3GP with this free and fast online converter. "
+"Optionally change further settings to enhance your video."
+msgstr ""
+
+#: configs/definition.py:36
+msgid ""
+"Online media converter to convert your video from over 50 source formats to "
+"AVI in high quality. Optional settings can be provided to enhance the "
+"quality."
+msgstr ""
+
+#: configs/definition.py:37
+msgid ""
+"Convert your video to FLV with this free online video converter. Choose "
+"optional settings to enhance your video. "
+msgstr ""
+
+#: configs/definition.py:38
+msgid ""
+"Convert videos to the Matroska MKV format with this free online video "
+"converter. Provides high quality and pretty fast."
+msgstr ""
+
+#: configs/definition.py:39
+msgid ""
+"Convert your videos to Apple Quicktime MOV format with this free online "
+"video converter. Provides high quality."
+msgstr ""
+
+#: configs/definition.py:40
+msgid ""
+"Convert your video to MP4 with this free online video converter. The MP4 "
+"video conversion is done in high quality while still providing fast results."
+msgstr ""
+
+#: configs/definition.py:41
+msgid ""
+"Convert your video files to the MPG standard with this free and online video "
+"converter. It offers many options like cutting and selecting the encoding "
+"format."
+msgstr ""
+
+#: configs/definition.py:42
+msgid ""
+"Convert your video to the OGV format with this free online video converter "
+"and optionally change quality parameters. Fully compatible with the HTML5 "
+"specification. "
+msgstr ""
+
+#: configs/definition.py:43
+msgid ""
+"Convert a video to the brand new WEBM format from Google with this free "
+"online video converter. Optionally set further options to enhance quality."
+msgstr ""
+
+#: configs/definition.py:44
+msgid ""
+"Convert your videos to the Microsoft WMV format with this fast and free "
+"online converter. Provides optional settings to enhance video material. "
+msgstr ""
+
+#: configs/definition.py:46
+msgid ""
+"Convert PDF to word with this free online converter. Upload any text "
+"document or a pdf file and download instantly your word document."
+msgstr ""
+
+#: configs/definition.py:47
+msgid ""
+"Convert your documents to the Microsoft DOCX format with this free online "
+"document converter. "
+msgstr ""
+
+#: configs/definition.py:48
+msgid "Convert your documents to HTML with this free online HTML converter."
+msgstr ""
+
+#: configs/definition.py:49
+msgid ""
+"Convert your documents to the Open-Office ODT format with this free online "
+"document converter. "
+msgstr ""
+
+#: configs/definition.py:50
+msgid ""
+"Convert your document or image to PDF with this free online PDF converter. "
+"Support for over 250 source formats."
+msgstr ""
+
+#: configs/definition.py:51
+msgid ""
+"Free online file converter to convert various file types like PPTX or ODP to "
+"the Microsoft Powerpoint PPT format."
+msgstr ""
+
+#: configs/definition.py:52
+msgid ""
+"Online converter to create Microsoft Powerpoint presentations in the new "
+"PPTX format. Free of charge providing high quality file conversion results."
+msgstr ""
+
+#: configs/definition.py:53
+msgid ""
+"This free online RTF converter allows you to convert your files and ebooks "
+"to the RTF format without installing any software on your computer. It even "
+"can convert text from images."
+msgstr ""
+
+#: configs/definition.py:54
+msgid ""
+"This free online media converter lets you convert your documents and ebooks "
+"to the TXT format, including OCR. Fast and high quality conversion."
+msgstr ""
+
+#: configs/definition.py:55
+msgid ""
+"Convert your file to XLSX with this free online file converter. OCR is "
+"supported in case you want to convert from PDF to XLSX. "
+msgstr ""
+
+#: configs/definition.py:57
+msgid ""
+"Free online ebook converter to convert your ebooks to the AZW 3 format from "
+"Amazon for your Kindle."
+msgstr ""
+
+#: configs/definition.py:58
+msgid ""
+"Convert your text for your ebook to the ePub format with this free online "
+"ePub converter. Select the target ebook reader for better accuracy. "
+msgstr ""
+
+#: configs/definition.py:59
+msgid ""
+"Convert text or other ebooks to the FictionBook FB2 format with this free "
+"online FB2 converter. Select the target ebook reader for better accuracy."
+msgstr ""
+
+#: configs/definition.py:60
+msgid ""
+"Create an ebook in the LIT format for Microsoft reader with this free online "
+"ebook converter. Specify your target reader to optimize the output."
+msgstr ""
+
+#: configs/definition.py:61
+msgid ""
+"Convert documents like text, PDF or other ebooks to the Sony LRF format with "
+"this free online ebook converter. Specify the target device to get best "
+"conversion results. "
+msgstr ""
+
+#: configs/definition.py:62
+msgid ""
+"An Online MOBI converter that can convert documents and ebooks to the mobi "
+"ebook reader format. Optionally set target reader to further enhance "
+"quality. "
+msgstr ""
+
+#: configs/definition.py:63
+msgid ""
+"Convert text to PDF optimized for ebook readers with this free online ebook "
+"converter. Select target devices like the Kindle or Sony reader to enhance "
+"formatting."
+msgstr ""
+
+#: configs/definition.py:64
+msgid ""
+"Convert your text, ebooks or documents to the Palm PDB ebook format in high "
+"quality with this free online ebook converter"
+msgstr ""
+
+#: configs/definition.py:65
+msgid ""
+"This free online ebook converter lets you easily convert ebooks and text "
+"files to the TCR format in high quality."
+msgstr ""
+
+#: configs/definition.py:67
+msgid ""
+"This online video converter helps you to meet the video specifications "
+"needed when you want to upload your video to Dailymotion."
+msgstr ""
+
+#: configs/definition.py:68
+msgid ""
+"A free online video converter that allows you to convert a video to be "
+"uploaded on Facebook. Includes high quality presets."
+msgstr ""
+
+#: configs/definition.py:69
+msgid ""
+"A free online converter that allows you to convert your file so it can be "
+"uploaded to Instagram. Select quality and size via presets."
+msgstr ""
+
+#: configs/definition.py:70
+msgid ""
+"Convert your video file with this online video converter so you can share it "
+"inline in Telegram."
+msgstr ""
+
+#: configs/definition.py:71
+msgid ""
+"This online video converter converts your file to a file format that is "
+"accepted by Twitch for upload."
+msgstr ""
+
+#: configs/definition.py:72
+msgid ""
+"This online converter converts your video or image to a format that is "
+"accepted for upload by Twitter."
+msgstr ""
+
+#: configs/definition.py:73
+msgid ""
+"A video converter for Viber that allows you to convert your video to a file "
+"format Viber accepts."
+msgstr ""
+
+#: configs/definition.py:74
+msgid ""
+"Preprocess and convert your video files to a format vimeo accepts with this "
+"free vimeo video converter. Set the quality and screen size using our high "
+"quality presets."
+msgstr ""
+
+#: configs/definition.py:75
+msgid ""
+"An online file converter to create files that can be easily uploaded to "
+"WhatsApp. Choose a high preset for quality and size or cut the video."
+msgstr ""
+
+#: configs/definition.py:76
+msgid ""
+"Choose a preset to prepare your files before you upload them to Youtube. Fix "
+"file issues if Youtube requires a different format. "
+msgstr ""
+
+#: configs/definition.py:78
+msgid ""
+"Convert your video to the Android format with this free online file "
+"converter. Set optional parameters to refine the conversion process."
+msgstr ""
+
+#: configs/definition.py:79
+msgid ""
+"This free online Blackberry video converter lets you convert your video "
+"files to the format your Blackberry can play. Online and for free. "
+msgstr ""
+
+#: configs/definition.py:80
+msgid ""
+"Create videos optimized for Apple iPad devices with this free online iPad "
+"converter. Additionally you can change settings to further enhance the video."
+msgstr ""
+
+#: configs/definition.py:81
+msgid ""
+"With this free online video converter you can convert your videos to the "
+"iPhone format. Upload a file or provide a URL to a video."
+msgstr ""
+
+#: configs/definition.py:82
+msgid ""
+"This online converter is optimized to convert your video for your iPod. The "
+"converter is free and provides fast result."
+msgstr ""
+
+#: configs/definition.py:83
+msgid ""
+"Convert your video to the Playstation PS3 format with this free and fast "
+"online converter. High quality."
+msgstr ""
+
+#: configs/definition.py:84
+msgid ""
+"Free online video converter to convert your video files to a Playstaion "
+"Poratble (PSP) format. Upload a file or provide a link to a URL."
+msgstr ""
+
+#: configs/definition.py:85
+msgid ""
+"Convert video to the Nintendo Wii format, online and free. Just upload your "
+"video file or provide a URL and start converting. Wii video howto included."
+msgstr ""
+
+#: configs/definition.py:86
+msgid ""
+"Free online video converter to convert videos to the XBOX-360 format. Fast "
+"and high quality."
+msgstr ""
+
+#: configs/definition.py:88
+msgid ""
+"Free online pdf converter allows you to convert your pdf documents to images "
+"format."
+msgstr ""
+"Le convertisseur pdf en ligne gratuit vous permet de convertir vos documents "
+"pdf au format images."
+
+#: configs/definition.py:89
+msgid ""
+"Free online pdf converter allows you to convert your images to pdf document."
+msgstr ""
+
+#: configs/definition.py:90
+msgid ""
+"This PDF compression tool allows you to reduce the file size of PDFs. "
+"Optimize your documents for uploading and sending on the internet. "
+msgstr ""
+
+#: configs/definition.py:91
+msgid ""
+"JPG compression is used to reduce the file size of your images. Make images "
+"smaller with this JPG compressor. It's online and free."
+msgstr ""
+
+#: configs/definition.py:92
+msgid ""
+"PNG compression can reduce the file size of your photos, images, graphics, "
+"and other pictures. Easy-to-use and free online PNG compressor."
+msgstr ""
+
+#: configs/definition.py:93
+msgid ""
+"MP4 compression for your videos. Make your MP4 videos smaller to send or "
+"upload them. It's easy and free!"
+msgstr ""
+
+#: configs/definition.py:94
+msgid ""
+"Compress and optimize your SVG(Scalable Vector Graphics) files for free. "
+"This tool will reduce size of you svg files."
+msgstr ""
+
+#: configs/filetypes.py:5
+msgid "Image Converter"
+msgstr "Convertisseur d'images"
+
+#: configs/filetypes.py:6
+msgid ""
+"Here, you can find an image converter for your needs, for example, a PDF to "
+"image converter."
+msgstr ""
+"Ici, vous pouvez trouver un convertisseur d'image pour vos besoins, par "
+"exemple, un convertisseur PDF en image."
+
+#: configs/filetypes.py:7
+msgid ""
+"A list with our free online image converter that convert to a variety of "
+"target formats. You can also apply effects or enhance images during "
+"conversion. Just select your format you want to convert to, upload your "
+"image file and optionally select filters. Your image will be converted "
+"instantly and you can download the result after only a couple of seconds."
+msgstr ""
+
+#: configs/filetypes.py:13 configs/filetypes.py:90 configs/filetypes.py:143
+#: configs/filetypes.py:227 configs/filetypes.py:282 configs/filetypes.py:332
+msgid "Options"
+msgstr ""
+
+#: configs/filetypes.py:17
+msgid "Change Size"
+msgstr ""
+
+#: configs/filetypes.py:55
+msgid "Crop from"
+msgstr ""
+
+#: configs/filetypes.py:74
+msgid "Black and white threshold"
+msgstr ""
+
+#: configs/filetypes.py:82
+msgid "Audio Converter"
+msgstr ""
+
+#: configs/filetypes.py:83
+msgid ""
+"A versatile online audio converter to convert audio files in the most common "
+"audio"
+msgstr ""
+
+#: configs/filetypes.py:93 configs/filetypes.py:146
+msgid "Change audio bitrate"
+msgstr ""
+
+#: configs/filetypes.py:98
+msgid "Change sampling rate"
+msgstr ""
+
+#: configs/filetypes.py:103
+msgid "Change audio channels"
+msgstr ""
+
+#: configs/filetypes.py:108
+msgid "Trim audio"
+msgstr ""
+
+#: configs/filetypes.py:112 configs/filetypes.py:160 configs/filetypes.py:300
+#: configs/filetypes.py:365
+msgid "From"
+msgstr ""
+
+#: configs/filetypes.py:121 configs/filetypes.py:169 configs/filetypes.py:309
+#: configs/filetypes.py:374
+msgid "To"
+msgstr ""
+
+#: configs/filetypes.py:135
+msgid "Video Converter"
+msgstr ""
+
+#: configs/filetypes.py:136
+msgid ""
+"Convert video files into the most common formats, such as MP4, AVI, MOV, and "
+"more"
+msgstr ""
+
+#: configs/filetypes.py:137
+msgid ""
+"This is a list with our free online video converter we have so far. Please "
+"choose the link you wish to convert your video file to."
+msgstr ""
+
+#: configs/filetypes.py:148
+msgid "in kbps"
+msgstr ""
+
+#: configs/filetypes.py:151
+msgid "Change frame rate"
+msgstr ""
+
+#: configs/filetypes.py:153
+msgid "per second"
+msgstr ""
+
+#: configs/filetypes.py:156
+msgid "Trim video"
+msgstr ""
+
+#: configs/filetypes.py:180
+msgid "Rotate video (clockwise)"
+msgstr ""
+
+#: configs/filetypes.py:185
+msgid "Mirror/flip video"
+msgstr ""
+
+#: configs/filetypes.py:194
+msgid "Document Converter"
+msgstr ""
+
+#: configs/filetypes.py:195
+msgid ""
+"Our free document converter selection that allows you to convert Word to "
+"PDF, JPG to PDF any many more."
+msgstr ""
+
+#: configs/filetypes.py:196
+msgid "This is a list with the free online document converter we offer."
+msgstr ""
+
+#: configs/filetypes.py:209
+msgid "Archive Converter"
+msgstr ""
+
+#: configs/filetypes.py:210
+msgid "Create archive files like a ZIP with this free compression tool."
+msgstr ""
+
+#: configs/filetypes.py:211
+msgid ""
+"This is our list of the online archive converter we provide. You can either "
+"compress your file to a specific archive format or convert one archive to "
+"another format."
+msgstr ""
+
+#: configs/filetypes.py:219
+msgid "Ebook Converter"
+msgstr ""
+
+#: configs/filetypes.py:220
+msgid ""
+"A list of versatile online ebook converter that can convert your text "
+"documents to ebook easily."
+msgstr ""
+
+#: configs/filetypes.py:221
+msgid ""
+"Our online ebook converter support a variety of input formats like PDF, "
+"ePub, HTML, LIT, LRF, mobi and more. Choose the target format you need for "
+"your ebook reader below and start converting."
+msgstr ""
+
+#: configs/filetypes.py:230
+msgid "Target ebook reader"
+msgstr ""
+
+#: configs/filetypes.py:235
+msgid "Change ebook title"
+msgstr ""
+
+#: configs/filetypes.py:239
+msgid "Change ebook author"
+msgstr ""
+
+#: configs/filetypes.py:243
+msgid "Set base font size (in pts)"
+msgstr ""
+
+#: configs/filetypes.py:252
+msgid "Change input encoding"
+msgstr ""
+
+#: configs/filetypes.py:255 configs/filetypes.py:261 configs/filetypes.py:267
+msgid "For expert only"
+msgstr ""
+
+#: configs/filetypes.py:258
+msgid "ASCII output"
+msgstr ""
+
+#: configs/filetypes.py:264
+msgid "Enable heuristics"
+msgstr ""
+
+#: configs/filetypes.py:273
+msgid "Device Converter"
+msgstr ""
+
+#: configs/filetypes.py:275
+msgid ""
+"A collection of online video converter for your mobile device, gaming "
+"console or tablet."
+msgstr ""
+
+#: configs/filetypes.py:276
+msgid ""
+"This is a list of devices we support with optimized conversion settings. You "
+"can convert a file optimized for hardware like a smartphone, a gaming "
+"console, a TV or to burn a proper data volume. Our converter knows the "
+"screen size of your devices and can optimize quality and file size for it. "
+"Just select the converter for your device below."
+msgstr ""
+
+#: configs/filetypes.py:285 configs/filetypes.py:335
+msgid "Set video size"
+msgstr ""
+
+#: configs/filetypes.py:287
+msgid "Video size property works only on android, ipad and iphone devices."
+msgstr ""
+
+#: configs/filetypes.py:291 configs/filetypes.py:356
+msgid "Disable audio track"
+msgstr ""
+
+#: configs/filetypes.py:296 configs/filetypes.py:361
+msgid "Cut video"
+msgstr ""
+
+#: configs/filetypes.py:323
+msgid "Webservice Converter"
+msgstr ""
+
+#: configs/filetypes.py:325
+msgid ""
+"Convert and optimize your files for webservices like WhatsApp, Twitter, "
+"Facebook, and many more."
+msgstr ""
+
+#: configs/filetypes.py:326
+msgid ""
+"This free online file converter lets you convert your files so they can "
+"easily be upload to webservices like Youtube, Instagram and the like. It's "
+"possible to upload a file that is not recognized by these webservices and "
+"convert it using presets to a format that is supported by these websites."
+msgstr ""
+
+#: configs/filetypes.py:388
+msgid "PDF Converter"
+msgstr "Convertisseur PDF"
+
+#: configs/filetypes.py:390
+msgid "Convert {}"
+msgstr "Convertir {}"
+
+#: configs/filetypes.py:391 configs/filetypes.py:392
+msgid ""
+"This PDF converter allows you to convert PDF to images and others available "
+"format."
+msgstr ""
+"Ce convertisseur PDF vous permet de convertir des PDF en images et autres "
+"formats disponibles."
+
+#: configs/filetypes.py:405
+msgid "Compress Documents"
+msgstr ""
+
+#: configs/filetypes.py:406
+msgid "Compress document files"
+msgstr ""
+
+#: configs/filetypes.py:408
+msgid "Reduce the file size of larger PDF documents"
+msgstr ""
+
+#: configs/filetypes.py:409
+msgid ""
+"With this free online document compression tool, you can reduce the file "
+"size of larger PDF documents. Use this document compressor to optimize your "
+"documents for uploading them or for sending them via e-mail or messenger. "
+"Make documents smaller - online and for free."
+msgstr ""
+
+#: configs/filetypes.py:418
+msgid "Compress Images"
+msgstr ""
+
+#: configs/filetypes.py:419
+msgid "Compress image files"
+msgstr ""
+
+#: configs/filetypes.py:420 configs/filetypes.py:439
+msgid "Compress {}"
+msgstr ""
+
+#: configs/filetypes.py:421
+msgid ""
+"Reduce the file size of your pictures, photos, graphics, and more with "
+"versatile image compression."
+msgstr ""
+
+#: configs/filetypes.py:422
+msgid ""
+"Make all kinds of image files smaller when it comes to size. All you need is "
+"this free online image compressor. Reduce the file size of your pictures, "
+"photos, graphics, and more with versatile image compression. "
+msgstr ""
+
+#: configs/filetypes.py:437
+msgid "Compress Videos"
+msgstr ""
+
+#: configs/filetypes.py:438
+msgid "Compress video files"
+msgstr ""
+
+#: configs/filetypes.py:440
+msgid "Reduce the video file size using our free, online video compressor."
+msgstr ""
+
+#: configs/filetypes.py:441
+msgid ""
+"You can easily reduce the video file size using our free, online video "
+"compressor. Send videos via WhatsApp, messengers, or e-mail or upload them "
+"to YouTube and other video platforms. Video compression makes sure that your "
+"videos are not too big."
+msgstr ""
+
+#: configs/languages.py:5
+msgid "English"
+msgstr ""
+
+#: configs/languages.py:6
+msgid "French"
+msgstr ""
+
+#: templates/about.html:2 templates/about.html:9
+msgid "About Us"
+msgstr ""
+
+#: templates/about.html:10
+msgid ""
+"is an online unlimited freeconversion\n"
+"            website toolkit that allows any user to convert his/her any "
+"files whether; Document, Images, Videos,\n"
+"            Software, Ebook, Archives, Audio and hundreds of other tools "
+"available on our site."
+msgstr ""
+
+#: templates/about.html:14
+msgid ""
+"We believe that it is important to focus on core business competencies and "
+"let others do everything else.\n"
+"            This is why we are doing what we are best at doing: converting "
+"files. "
+msgstr ""
+
+#: templates/about.html:17
+msgid ""
+"We believe that data security is the most important good in our industry. \n"
+"            This is why data protection and security have the highest "
+"priorities for us."
+msgstr ""
+
+#: templates/about.html:20
+msgid "We believe in small, agile and unbureaucratic teams."
+msgstr ""
+
+#: templates/about.html:22
+msgid ""
+"If you have any suggestion or want specific on demand converters on our "
+"site, please don&rsquo;t forget to\n"
+"            contact us at"
+msgstr ""
+
+#: templates/base.html:8
+#, fuzzy
+msgid ""
+"Find all in one video converter, document, images, audios, pdfs, ebooks, "
+"software and much more."
+msgstr ""
+"Encuentre todo en un convertidor de video, documentos, imágenes, audios, "
+"pdfs, libros electrónicos, software y mucho más."
+
+#: templates/base.html:11
+msgid "Free online all in one converter"
+msgstr ""
+
+#: templates/base.html:49 templates/base.html:96 templates/index.html:2
+#: templates/output.html:2
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:53 templates/base.html:97
+msgid "Formats"
+msgstr ""
+
+#: templates/base.html:56 templates/base.html:99
+msgid "About"
+msgstr ""
+
+#: templates/base.html:59 templates/base.html:98
+msgid "FAQ"
+msgstr ""
+
+#: templates/base.html:85
+msgid "Information"
+msgstr ""
+
+#: templates/base.html:87
+msgid ""
+"This free online file converter lets you convert media easy and fast from "
+"one format \n"
+"                        to another. We support a lot of different source "
+"formats. If you can't find the \n"
+"                        conversion you need or facing any issue regarding "
+"file convertion \n"
+"                        please email us at"
+msgstr ""
+
+#: templates/base.html:94
+msgid "Pages"
+msgstr ""
+
+#: templates/base.html:103
+msgid "Links"
+msgstr ""
+
+#: templates/base.html:105 templates/privacy.html:2
+msgid "Privacy Policy"
+msgstr ""
+
+#: templates/base.html:106 templates/disclaimer.html:2
+msgid "Disclaimer"
+msgstr ""
+
+#: templates/base.html:112
+msgid "for feedback, suggestions and problems email us "
+msgstr ""
+
+#: templates/base.html:127
+msgid "All rights reserved."
+msgstr ""
+
+#: templates/converter.html:11 templates/list.html:10 templates/list.html:22
+msgid "Convert"
+msgstr "Convertir"
+
+#: templates/converter.html:11 templates/list.html:10
+msgid "to the"
+msgstr ""
+
+#: templates/converter.html:77
+msgid "Convert your"
+msgstr ""
+
+#: templates/converter.html:83
+#, python-format
+msgid "to the %(fileformat)s format"
+msgstr ""
+
+#: templates/converter.html:91
+msgid ""
+"Upload your files | <small>Max upto </b>10 files</b>, each upto <b>1GB</b></"
+"small>"
+msgstr ""
+
+#: templates/converter.html:119
+msgid "Customize Settings"
+msgstr ""
+
+#: templates/converter.html:134
+msgid ""
+"Make sure you have uploaded valid files otherwise conversion will not be "
+"correct"
+msgstr ""
+
+#: templates/converter.html:135
+msgid "Convert files"
+msgstr ""
+
+#: templates/converter.html:145
+msgid "Drop files to upload, or"
+msgstr ""
+
+#: templates/converter.html:146
+msgid "Browse"
+msgstr ""
+
+#: templates/converter.html:147
+msgid "Only one file allowed"
+msgstr ""
+
+#: templates/converter.html:148
+msgid "File type is not allowed"
+msgstr ""
+
+#: templates/converter.html:149
+msgid "Files, bigger than"
+msgstr ""
+
+#: templates/converter.html:150
+msgid "is not allowed"
+msgstr ""
+
+#: templates/converter.html:151
+msgid "Only"
+msgstr ""
+
+#: templates/converter.html:152
+msgid "files allowed"
+msgstr ""
+
+#: templates/converter.html:168
+msgid "Please upload some files to continue"
+msgstr ""
+
+#: templates/disclaimer.html:9
+msgid " Disclaimer "
+msgstr ""
+
+#: templates/disclaimer.html:10
+msgid ""
+" If you require any more information or have any questions about our site's "
+"disclaimer, please feel free to\n"
+"            contact us by email at "
+msgstr ""
+
+#: templates/disclaimer.html:11
+msgid ""
+"Our Disclaimer was\n"
+"            generated with the help of the Disclaimer Generator."
+msgstr ""
+
+#: templates/disclaimer.html:13
+msgid "Disclaimers for All In One Video Converter"
+msgstr ""
+
+#: templates/disclaimer.html:14
+msgid "All the information on this website"
+msgstr ""
+
+#: templates/disclaimer.html:15
+msgid ""
+"is\n"
+"            published in good faith and for general information purpose "
+"only. All In One Video Converter does not make\n"
+"            any warranties about the completeness, reliability and accuracy "
+"of this information. Any action you take\n"
+"            upon the information you find on this website (All In One Video "
+"Converter), is strictly at your own risk.\n"
+"            All In One Video Converter will not be liable for any losses and/"
+"or damages in connection with the use of\n"
+"            our website."
+msgstr ""
+
+#: templates/disclaimer.html:21
+msgid ""
+"From our website, you can visit other websites by following hyperlinks to "
+"such external sites. While we\n"
+"            strive to provide only quality links to useful and ethical "
+"websites, we have no control over the content and\n"
+"            nature of these sites. These links to other websites do not "
+"imply a recommendation for all the content found\n"
+"            on these sites. Site owners and content may change without "
+"notice and may occur before we have the\n"
+"            opportunity to remove a link which may have gone 'bad'."
+msgstr ""
+
+#: templates/disclaimer.html:26
+msgid ""
+"Please be also aware that when you leave our website, other sites may have "
+"different privacy policies and\n"
+"            terms which are beyond our control. Please be sure to check the "
+"Privacy Policies of these sites as well as\n"
+"            their \"Terms of Service\" before engaging in any business or "
+"uploading any information. Our Privacy Policy\n"
+"            was created by the Privacy Policy Generator."
+msgstr ""
+
+#: templates/disclaimer.html:30
+msgid "Consent"
+msgstr ""
+
+#: templates/disclaimer.html:31
+msgid ""
+"By using our website, you hereby consent to our disclaimer and agree to its "
+"terms."
+msgstr ""
+
+#: templates/disclaimer.html:32
+msgid "Update"
+msgstr ""
+
+#: templates/disclaimer.html:33
+msgid ""
+"Should we update, amend or make any changes to this document, those changes "
+"will be prominently posted here."
+msgstr ""
+
+#: templates/faq.html:2
+msgid "FAQs"
+msgstr ""
+
+#: templates/faq.html:9
+msgid "Frequently Asked Questions (FAQs)"
+msgstr ""
+
+#: templates/faq.html:10
+msgid "Is There a Limit to the Numbers of Files I Can Convert?"
+msgstr ""
+
+#: templates/faq.html:11
+#, python-format
+msgid ""
+"Our online conversion service is 100% free and therefore; there is no limits "
+"to the numbers of files you can\n"
+"            convert online. So, feel free to use our website as much as you "
+"want too."
+msgstr ""
+
+#: templates/faq.html:14
+msgid "Is Your Conversion Services Really Free?"
+msgstr ""
+
+#: templates/faq.html:15
+msgid "Yes, our service is completely free."
+msgstr ""
+
+#: templates/faq.html:17
+msgid "What Happens to my Filed I uploaded? Are they even safe?"
+msgstr ""
+
+#: templates/faq.html:18
+#, python-format
+msgid "Your files are 100% safe on our servers."
+msgstr ""
+
+#: templates/faq.html:19
+msgid ""
+"Once you process the file to conversion the file instantly deletes from the "
+"server and it forwards to the\n"
+"            next storage server."
+msgstr ""
+
+#: templates/faq.html:21
+msgid ""
+"The storage server keeps the file for 24 hours and it then automatically "
+"deletes the files from the server\n"
+"            after 24 hourse."
+msgstr ""
+
+#: templates/faq.html:23
+msgid ""
+"So, there is no need to worry, we have setup all important security for our "
+"users."
+msgstr ""
+
+#: templates/faq.html:25
+msgid "What If my File Fails to Convert? What&rsquo;s Wrong?"
+msgstr ""
+
+#: templates/faq.html:26
+msgid ""
+"Well, once you upload your file to our site for conversion, you please wait "
+"until the file is completely\n"
+"            uploaded. Once the file is uploaded you can click on convert and "
+"your file will start downloading."
+msgstr ""
+
+#: templates/faq.html:28
+msgid ""
+"But, if it failed to download, you please contact us directly on our support "
+"email at: "
+msgstr ""
+
+#: templates/faq.html:32
+msgid "Do you obtain the legal right of my file when I use your services?"
+msgstr ""
+
+#: templates/faq.html:33
+msgid ""
+"In short, No. We do not intent to have the legal rights on your files. "
+"Therefore, once a user uploaded any\n"
+"            file for conversion. It automatically gets deleted after very "
+"shortest amount of time."
+msgstr ""
+
+#: templates/faq.html:36
+msgid "How long does it take to convert a video?"
+msgstr ""
+
+#: templates/faq.html:37
+msgid ""
+"While we are offering one of the fastest cloud compute conversion rates. The "
+"actual time it takes is based on\n"
+"            the length / size of your video."
+msgstr ""
+
+#: templates/faq.html:39
+msgid "Also, the speed and stability of your internet connection also matters."
+msgstr ""
+
+#: templates/faq.html:41
+msgid "What video formats do you support?"
+msgstr ""
+
+#: templates/faq.html:42
+msgid ""
+"We support each and every video format on our platform. You can find out our "
+"video converters here: "
+msgstr ""
+
+#: templates/faq.html:46
+msgid "Can I convert videos using my tablet or smartphone?"
+msgstr ""
+
+#: templates/faq.html:47
+msgid ""
+"Of course, you can convert your video, audio, docs, ebook, software, archive "
+"and more files on your tablet\n"
+"            and smartphone."
+msgstr ""
+
+#: templates/faq.html:50
+msgid ""
+"In case, you do not find what you were looking for, please connect with us "
+"at "
+msgstr ""
+
+#: templates/formats.html:2
+msgid "Available formats"
+msgstr ""
+
+#: templates/formats.html:10
+msgid "Search for"
+msgstr ""
+
+#: templates/formats.html:11
+msgid "Following is the list of search result on given query."
+msgstr ""
+
+#: templates/formats.html:13
+msgid "File format available and information"
+msgstr ""
+
+#: templates/formats.html:14
+msgid ""
+"This file format extension list gives an overview about the huge amount of "
+"different file types available. To get more detailed information about each "
+"file extension, please click on the links below."
+msgstr ""
+
+#: templates/formats.html:17
+msgid "No result found <br> Please try some other query"
+msgstr ""
+
+#: templates/formats.html:28 templates/list.html:33
+msgid "file converter"
+msgstr ""
+
+#: templates/formats.html:39 templates/list.html:43
+msgid "Read more"
+msgstr ""
+
+#: templates/index.html:8
+msgid "Unlimited Free Online All In One Converter"
+msgstr "Convertidor todo en uno en línea gratuito ilimitado"
+
+#: templates/index.html:9
+msgid ""
+"Find all in one video converter, document, images, audios, pdfs, ebooks, "
+"software and much more. "
+msgstr ""
+"Encuentre todo en un convertidor de video, documentos, imágenes, audios, "
+"pdfs, libros electrónicos, software y mucho más."
+
+#: templates/index.html:25 templates/index.html:62
+msgid "Select target format"
+msgstr ""
+
+#: templates/index.html:28
+#, python-format
+msgid "Convert to %(filetype)s"
+msgstr ""
+
+#: templates/index.html:36 templates/index.html:71
+msgid "Go"
+msgstr ""
+
+#: templates/index.html:47 templates/sidebar.html:32
+msgid "Tools"
+msgstr ""
+
+#: templates/output.html:15
+msgid "Something went wrong"
+msgstr ""
+
+#: templates/output.html:17
+msgid "Go Back"
+msgstr ""
+
+#: templates/output.html:20
+msgid "Your files are converted!"
+msgstr ""
+
+#: templates/output.html:21
+msgid "Please download your output files by clicking buttons below."
+msgstr ""
+
+#: templates/output.html:31
+msgid "Download"
+msgstr ""
+
+#: templates/output.html:36
+msgid "Your files are being processed, please wait"
+msgstr ""
+
+#: templates/output.html:37
+msgid "Waiting to intiate a process"
+msgstr ""
+
+#: templates/privacy.html:9
+msgid "PRIVACY POLICY"
+msgstr ""
+
+#: templates/privacy.html:10
+msgid "Update date"
+msgstr ""
+
+#: templates/privacy.html:11
+msgid ""
+"You are very welcome to visit \"WEBSITE NAME\" (hereinafter referred to as "
+"this website).\n"
+"            In order to allow you to use the services and information of "
+"this website with peace of mind, we\n"
+"            hereby explain to you the privacy protection policy of this "
+"website to protect your rights and\n"
+"            interests. Please read the following carefully:"
+msgstr ""
+
+#: templates/privacy.html:15
+msgid ""
+"We use your personal data to provide this service. By using this service, "
+"you agree to our\n"
+"            collection and use of data in accordance with this privacy "
+"policy. If you do not agree to all or\n"
+"            part of it, please do not use this website service."
+msgstr ""
+
+#: templates/privacy.html:18
+msgid "1. THE SCOPE OF APPLICATION OF THE PRIVACY PROTECTION POLICY"
+msgstr ""
+
+#: templates/privacy.html:19
+msgid ""
+"The content of the privacy protection policy, including how this website "
+"handles the personal\n"
+"            identification data collected when you use the website services."
+"&nbsp;The privacy protection policy\n"
+"            does not apply to related linked websites other than this "
+"website, nor does it apply to personnel\n"
+"            who are not entrusted or participated in the management of this "
+"website."
+msgstr ""
+
+#: templates/privacy.html:23
+msgid "2. METHODS OF COLLECTING, PROCESSING AND USING PERSONAL DATA"
+msgstr ""
+
+#: templates/privacy.html:26
+msgid ""
+"When you visit this website or use the functional services provided by this "
+"website, we\n"
+"                    will consider the nature of the service function, ask "
+"you to provide the necessary personal\n"
+"                    data, and process and use your personal data within the "
+"scope of the specific purpose;\n"
+"                    Written consent, this website will not use personal data "
+"for other purposes."
+msgstr ""
+
+#: templates/privacy.html:32
+msgid ""
+"This website will retain your name, email address, contact information, and "
+"time of use\n"
+"                    when you use interactive functions such as service "
+"mailboxes and questionnaires."
+msgstr ""
+
+#: templates/privacy.html:36
+msgid ""
+"During normal browsing, the server will record relevant actions on its own, "
+"including the\n"
+"                    IP address of the connected device, the time of use, the "
+"browser used, the browsing and\n"
+"                    click data records, etc., as a reference for us to "
+"improve our website services. This record\n"
+"                    is for internal use and will never be released to the "
+"public."
+msgstr ""
+
+#: templates/privacy.html:42
+msgid ""
+"In order to provide accurate services, we will conduct statistics and "
+"analysis on the\n"
+"                    content of the collected questionnaires, and present the "
+"statistical data or explanatory\n"
+"                    text of the analysis results. In addition to internal "
+"research, we will publish statistical\n"
+"                    data and explanatory text as necessary, but does not "
+"involve specific Personal\n"
+"                    information."
+msgstr ""
+
+#: templates/privacy.html:49
+msgid "3. DATA PROTECTION"
+msgstr ""
+
+#: templates/privacy.html:52
+msgid ""
+"The host of this website is equipped with various information security "
+"equipment such as\n"
+"                    firewalls, anti-virus systems, and necessary security "
+"protection measures to protect the\n"
+"                    website and your personal data. Strict protection "
+"measures are adopted. Only authorized\n"
+"                    personnel can access your personal information. Data and "
+"relevant processing personnel have\n"
+"                    signed a confidentiality agreement. Anyone who violates "
+"the confidentiality obligation will\n"
+"                    be subject to relevant legal sanctions."
+msgstr ""
+
+#: templates/privacy.html:60
+msgid ""
+"If it is necessary to entrust other units to provide services due to "
+"business needs, this\n"
+"                    website will also strictly require them to comply with "
+"confidentiality obligations, and take\n"
+"                    necessary inspection procedures to ensure that they will "
+"indeed comply."
+msgstr ""
+
+#: templates/privacy.html:65
+msgid "4. EXTERNAL LINKS ON THE WEBSITE"
+msgstr ""
+
+#: templates/privacy.html:66
+msgid ""
+"The web pages of this website provide Internet links to other websites, and "
+"you can also click to\n"
+"            enter other websites through the links provided on this website."
+"&nbsp;However, the privacy\n"
+"            protection policy of this website is not applicable to the "
+"linked website, and you must refer to the\n"
+"            privacy protection policy in the linked website."
+msgstr ""
+
+#: templates/privacy.html:70
+msgid "5. POLICY ON SHARING PERSONAL DATA WITH THIRD PARTIES"
+msgstr ""
+
+#: templates/privacy.html:71
+msgid ""
+"This website will never provide, exchange, rent or sell any of your personal "
+"information to other\n"
+"            individuals, groups, private companies or public agencies, but "
+"those with legal basis or contractual\n"
+"            obligations are not limited to this.&nbsp;The proviso in the "
+"preceding paragraph includes but is not\n"
+"            limited to:"
+msgstr ""
+
+#: templates/privacy.html:77
+msgid "With your written consent."
+msgstr ""
+
+#: templates/privacy.html:80
+msgid "The law expressly stipulates."
+msgstr ""
+
+#: templates/privacy.html:83
+msgid "To avoid danger to your life, body, freedom or property."
+msgstr ""
+
+#: templates/privacy.html:86
+msgid ""
+"Cooperating with public agencies or academic research institutions is "
+"necessary for\n"
+"                    statistical or academic research based on public "
+"interest, and the data is processed or\n"
+"                    collected by the provider and cannot identify a specific "
+"party according to its disclosure\n"
+"                    method."
+msgstr ""
+
+#: templates/privacy.html:92
+msgid ""
+"When your behavior on the website violates the terms of service or may "
+"damage or hinder the\n"
+"                    rights of the website and other users or cause damage to "
+"anyone, the website management unit\n"
+"                    analyzes and reveals your personal information for the "
+"purpose of identifying, contacting or\n"
+"                    taking legal action. Necessary."
+msgstr ""
+
+#: templates/privacy.html:98
+msgid "Conducive to your rights."
+msgstr ""
+
+#: templates/privacy.html:101
+msgid ""
+"When this website entrusts a manufacturer to assist in the collection, "
+"processing or use of\n"
+"                    your personal data, it will do its best to supervise and "
+"manage outsourced manufacturers or\n"
+"                    individuals."
+msgstr ""
+
+#: templates/privacy.html:106
+msgid "6. USE OF COOKIES"
+msgstr ""
+
+#: templates/privacy.html:107
+msgid ""
+"In order to provide you with the best service, this website will place and "
+"access our cookies on\n"
+"            your computer. If you do not want to accept the writing of "
+"cookies, you can set the privacy level in\n"
+"            the browser function item you use. High, you can refuse the "
+"writing of cookies, but it may cause\n"
+"            some functions of the website to not be executed normally."
+msgstr ""
+
+#: templates/privacy.html:111
+msgid "7. AMENDMENT OF PRIVACY PROTECTION POLICY"
+msgstr ""
+
+#: templates/privacy.html:112
+msgid ""
+"The privacy protection policy of this website will be revised at any time in "
+"response to needs, and\n"
+"            the revised terms will be published on the website."
+msgstr ""
+
+#: templates/sidebar.html:2
+msgid "Available converters"
+msgstr ""
+
+#: templates/sidebar.html:4
+msgid "Converters"
+msgstr ""
+
+#: templates/sidebar.html:19 templates/sidebar.html:50
+msgid "Convert to"
+msgstr ""

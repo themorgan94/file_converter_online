@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}
+{% if available_types()[filetype]["category"] == "tool" %}
+    {% if fileformat is defined and fileformat != none %}
+    {{ _(available_types()[filetype]["_prefix"]) | replace("{}", fileformat) | splitpart(0, '_') }}
+    {% else %}
+    {{ available_types()[filetype]["type"] }}
+    {% endif %}
+{% else %}
+    {% trans %}Convert{% endtrans %} {{filetype}} {% if fileformat is not none %} {% trans %}to the{% endtrans %} {{fileformat}} {% endif %}
+{% endif %}
+{% endblock %}
+{% block content %}
+<div class="--content mt-5">
+    <div class="sidebar">
+        {% include "sidebar.html" %}
+    </div>
+    <div class="main-content">
+        {% if available_types()[filetype]["category"] == "tool" %}
+            <h4>{{ _(available_types()[filetype]["title"]) }}</h4>
+        {% else %}
+            <h4>{% trans %}Convert{% endtrans %} {{filetype}}</h4>
+        {% endif %}
+        <hr/>
+        <p>{{ _(filetypes[filetype]['long-description']) }}</p>
+
+        {% for type in filetypes[filetype]['ext'] %}
+            {% if available_types()[filetype]["category"] == "tool" %}
+            <a href="{{ url('/converter/') }}{{filetype}}/{{type}}" class="font-weight-bold">{{ _(available_types()[filetype]["_prefix"]) | replace("{}", type) | splitpart(0, '_') }}</a>
+            {% else %}
+                <a href="{{ url('/converter/') }}{{filetype}}/{{type}}" class="font-weight-bold">
+                    {% if not available_types()[filetype]["_prefix"] %}
+                        {{type}} {% trans %}file converter{% endtrans %}
+                    {% else %}
+                        {{ _(available_types()[filetype]["_prefix"]) | replace("{}", type) | replace("-", " ") | splitpart(0, '_') }}
+                    {% endif %}
+                </a>
+            {% endif %}
+            <hr/>
+            <p>
+                {{ _(definitions()[type]) }} 
+                <a href="{{ url('/converter/') }}{{filetype}}/{{type}}" 
+                class="text-success" style="text-decoration:underline">{% trans %}Read more{% endtrans %}</a>
+            </p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

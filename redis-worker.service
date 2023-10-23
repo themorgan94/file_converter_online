@@ -1,0 +1,13 @@
+[Unit]
+Description=Redis worker for cloud converter
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=<<app_directory>>
+ExecStart=python3 worker.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

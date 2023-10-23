@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}{% trans %}Available formats{% endtrans %}{% endblock %}
+{% block content %}
+<div class="--content mt-5">
+    <div class="sidebar">
+        {% include "sidebar.html" %}
+    </div>
+    <div class="main-content">
+        {% if q is defined and q | length %}
+        <h4>{% trans %}Search for{% endtrans %} <b>"{{q}}"</b></h4>
+        <p>{% trans %}Following is the list of search result on given query.{% endtrans %}</p>
+        {% else %}
+        <h4>{% trans %}File format available and information{% endtrans %}</h4>
+        <p>{% trans %}This file format extension list gives an overview about the huge amount of different file types available. To get more detailed information about each file extension, please click on the links below.{% endtrans %}</p>
+        {% endif %}
+        {% if types | length == 0 %}
+            <p class="mt-5 text-center">{% trans %}No result found <br> Please try some other query{% endtrans %}</p>
+        {% endif %}
+        {% for type in types | sort %}
+            <hr/>
+            {% if available_types()[types[type]['type']]["category"] == "tool" %}
+            <a href="{{ url('/converter/') }}{{types[type]['type']}}/{{type}}" class="font-weight-bold">
+                {{ _(available_types()[types[type]['type']]["_prefix"]) | replace("{}", type) | splitpart(0, '_') }}
+            </a>
+            {% else %}
+            <a href="{{ url('/converter/') }}{{types[type]['type']}}/{{type}}" class="font-weight-bold">
+                {% if not available_types()[types[type]['type']]["_prefix"] %}
+                    {{type}} {% trans %}file converter{% endtrans %}
+                {% else %}
+                    {{ _(available_types()[types[type]['type']]["_prefix"]) | replace("{}", type) | replace("-", " ") | splitpart(0, '_') }}
+                {% endif %}
+                
+            </a>
+            {% endif %}
+            <hr/>
+            <p>
+                {{ _(types[type]['def']) }} 
+                <a href="{{ url('/converter') }}/{{types[type]['type']}}/{{type}}" 
+                class="text-success" style="text-decoration:underline">{% trans %}Read more{% endtrans %}</a>
+            </p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

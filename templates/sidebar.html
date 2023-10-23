@@ -1,0 +1,61 @@
+<div class="sidebar-container">
+  <button class="sidebar-btn btn btn-block btn-info"><i class="fa fa-bars"></i> {% trans %}Available converters{% endtrans %} </button>
+  <div class="sidebar-content">
+    <span class="header-menu">{% trans %}Converters{% endtrans %}</span>
+    <ul>
+      {% for type in available_types() | sort %}
+      {% if not available_types()[type]["category"] %}
+      <li class="sidebar-dropdown">
+        <a href="{{ url('/converter/') }}{{type}}">
+          <i class="{{ available_types()[type]['icon-class'] }}"></i>
+          <span>{{type | upper}}</span>
+        </a>
+        <div class="sidebar-submenu {% if type == filetype %} active {%endif%}">
+          <ul>
+            {% for ext in available_types()[type]['ext'] %}
+            <li>
+              <a href="{{ url('/converter/') }}{{type}}/{{ext}}">
+                {% if not available_types()[type]["_prefix"] %}
+                    {% trans %}Convert to{% endtrans %} <b>{{ext}}</b>
+                {% else %}
+                    {{ available_types()[type]["_prefix"] | replace("{}", ext) | replace("-", " ") | splitpart(0, '_') }}
+                {% endif %}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    <span class="header-menu">{% trans %}Tools{% endtrans %}</span>
+    <ul>
+      {% for type in available_types() | sort %}
+      {% if available_types()[type]["category"] %}
+      <li class="sidebar-dropdown">
+        <a href="{{ url('/converter/') }}{{type}}">
+          <i class="{{ available_types()[type]['icon-class'] }}"></i>
+          <span>{{available_types()[type]["title"] | upper}}</span>
+        </a>
+        <div class="sidebar-submenu {% if type == filetype %} active {%endif%}">
+          <ul>
+            {% for ext in available_types()[type]['ext'] %}
+            <li>
+              {% if available_types()[type]["category"] == "tool" %}
+              <a href="{{ url('/converter/') }}{{type}}/{{ext}}">
+                {{ available_types()[type]["_prefix"] | replace("{}", ext) | splitpart(0, '_') }}
+              </a>
+              {% else %}
+              <a href="{{ url('/converter/') }}{{type}}/{{ext}}">{% trans %}Convert to{% endtrans %} <b>{{ext}}</b></a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

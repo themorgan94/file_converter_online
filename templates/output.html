@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %} {% trans %}Home{% endtrans %}{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<div class="--content mt-5">
+    <div class="sidebar">
+        {% include "sidebar.html" %}
+    </div>
+    <div class="main-content">
+        {% if job.is_finished %}
+            {% if job.result.error %}
+                <div class="text-center">
+                    <h3> {% trans %}Something went wrong{% endtrans %}</h3>
+                    <p>{{job.result.message}}</p>
+                    <button onclick="window.history.back()" class="btn btn-warning">{% trans %}Go Back{% endtrans %}</button>
+                </div>
+            {% else %}
+                <h4> {% trans %}Your files are converted!{% endtrans %}</h4>
+                <p> {% trans %}Please download your output files by clicking buttons below.{% endtrans %}</p>
+                <hr/>
+                {% for file_url in job.result.results %}
+                <div class="d-inline-block m-3 text-center">
+                    <h2 class="text-secondary">
+                        <i class="fa fa-file"></i>
+                    </h2>
+                    <p>
+                        <small>{{ file_url | basename | splitpart(0, '?') }}</small>
+                    </p>
+                    <a href="{{file_url}}" class="btn btn-success btn-sm" download> {% trans %}Download{% endtrans %}</a>
+                </div>
+                {% endfor %}
+            {% endif %}
+        {% else %}
+            <h4><i class="fa fa-cog fa-spin" style="font-size:24px"></i>  {% trans %}Your files are being processed, please wait{% endtrans %}</h4>
+            <p id="status"> {% trans %}Waiting to intiate a process{% endtrans %}</p>
+        {% endif %}
+        
+        <hr/>
+        <div class="row">
+            <!--<div class="col-md-12">
+                <h4>Want to convert other files?</h4>
+                <p>Cloud file converter supports free unlimitted file conversion. </p>
+                <a href="/" class="btn btn-info">
+                    Convert an other
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h4>Want to go premium?</h4>
+                <ul>
+                    <li>convert large files up to 8GB</li>
+                    <li>up to 10 concurrent conversions</li>
+                    <li>200 files per conversion</li>
+                    <li>higher priority conversion speed</li>
+                    <li>Ad-free pages</li>
+                </ul>
+                <a href="/" class="btn btn-success">
+                    Upgrade now
+                </a>
+            </div>-->
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {{super()}}
+    {% if job.is_finished is sameas false  %}
+        <script>
+            setInterval(function(){
+                $.get("/job/status/{{job_id}}", function(response){
+                    if(response.is_started)
+                        $("#status").text("You files are being converted, please wait..");
+                    if(response.is_queued)
+                        $("#status").text("Files are in queue, be patient");
+                    if(response.is_finished){
+                        $("#status").text("Files converstion completed.");
+                        window.location.reload();
+                    }
+                    
+                });
+            }, 1000)
+        </script>
+    {% endif %}
+{% endblock %}

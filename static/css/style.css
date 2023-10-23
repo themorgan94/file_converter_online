@@ -1,0 +1,154 @@
+a{
+    color: #1f9bcf;
+}
+body{
+    background: #fafafa;
+}
+.sidebar{
+    width: 300px;
+    background: transparent;
+    float:left;
+    padding: 15px;
+}
+.main-content{
+    background-color: #fff;
+    margin-left: 300px;
+    padding: 30px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul ul{
+    margin-left: 15px;
+}
+.sidebar .sidebar-dropdown>a{
+    background: #f1f1f1;
+    display: block;
+    padding: 7px 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar a:hover{
+    opacity: 0.7;
+}
+.sidebar .header-menu{
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+.sidebar .sidebar-dropdown li{
+    padding: 10px;
+}
+
+.sidebar li .sidebar-submenu{
+    display: none;
+}
+.sidebar li .sidebar-submenu.active{
+    display: block;
+}
+
+.file-tab .card-body p{
+    height: 62px;
+}
+.sidebar .sidebar-btn{
+    display: none;
+}
+
+.sidebar .sidebar-content{
+    display: block;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    height: auto;
+    overflow-y: auto;
+}
+
+
+.post img{
+    max-width: 100%;
+    height: auto !important;
+}
+a, p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.logo{
+    height: 49px;
+    width: auto;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+}
+
+nav{
+    z-index: 2;
+}
+
+
+.featured-imge{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    float:left;
+    margin-right: 15px;
+}
+
+
+@media (max-width: 575.98px) { 
+    .sidebar .sidebar-content{
+        display: none;
+        background: #f1f1f1;
+        padding: 22px;
+        box-shadow: 0px 0px 22px 0px #00000061;
+        height: 490px;
+        overflow-y: scroll;
+        position: absolute;
+        width:100%;
+    }
+    .sidebar{
+        width: 100%;
+        position: absolute;
+        top: 108px;
+        left: 0;
+        padding: 0;
+        z-index: 1;
+    }
+    .sidebar .sidebar-btn{
+        display: block;
+    }
+    .main-content{
+        margin-left: 0;
+        padding:0;
+        margin-top: 63px;
+    }
+    .featured-imge{
+        width: 100%;
+        float: none;
+        margin:0;
+        margin-bottom: 15px;
+    }
+    
+    .post iframe {
+        width: 100%
+    }
+}
+
+.search-form input{
+    background: #4e565f;
+}
+
+.post p, .post span{
+    color : #55595c !important;
+    font-size: .875rem !important;
+}
+
+[name='q'] {
+    border: 1px solid #343a40;
+}

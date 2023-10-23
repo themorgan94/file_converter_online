@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+{% for url in static_urls %}
+<url>
+  <loc>{{ url["loc"] }}</loc>
+  {% for key in supported_languages.keys() %}
+    <xhtml:link rel="alternate" hreflang="{{key}}" href="{{ replace_url_lang(url['loc'], key, True) }}" />
+  {% endfor %}
+</url>
+{% endfor %}
+ 
+{% for url in dynamic_urls %}
+<url>
+  <loc>{{ url["loc"] }}</loc>
+  <lastmod>{{ url["lastmod"] }}</lastmod>
+  {% for key in supported_languages.keys() %}
+    <xhtml:link rel="alternate" hreflang="{{key}}" href="{{ replace_url_lang(url['loc'], key, True) }}" />
+  {% endfor %}
+</url>
+{% endfor %}
+
+</urlset>

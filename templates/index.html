@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block title %}{% trans %}Home{% endtrans %}{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<section class="text-center mt-5">
+    <h2>{% trans %}Unlimited Free Online All In One Converter{% endtrans %}</h2>
+    <p>{% trans %}Find all in one video converter, document, images, audios, pdfs, ebooks, software and much more. {% endtrans %}</p>
+</section>
+<section class="file-types mt-5">
+    <div class="row">
+        {% for key, item in filetypes.items() %}
+        {% if not item['category'] %}
+        <div class="col-lg-4 col-md-4">
+            <div class="card file-tab mb-3">
+                <div class="card-header"><i class="{{ item['icon-class'] }}"></i> {{ _(item['title']) }}</div>
+                <div class="card-body">
+                    <p class="card-text">{{ _(item['description']) }}</p>
+                    <form method="get" action="/converter">
+                        <input type="hidden" name="type" value="{{ key }}">
+                        <div class="row">
+                            <div class="col-9">
+                                <select name="format" class="form-control" required>
+                                    <option value="none">{% trans %}Select target format{% endtrans %}</option>
+                                    {% for filetype in item['ext'] %}
+                                        {% if not item['_prefix'] %}
+                                            <option value="{{ filetype }}">{% trans %}Convert to {{ filetype }}{% endtrans %}</option>
+                                        {% else %}
+                                            <option value="{{ filetype }}">{{ item["_prefix"] | replace("{}", filetype) | replace("-", " ") | splitpart(0, '_') }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-success">{% trans %}Go{% endtrans %}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    
+    <p class="font-weight-bold">{% trans %}Tools{% endtrans %}</p>
+    <hr>
+    <div class="row">
+        {% for key, item in filetypes.items() %}
+        {% if item['category'] %}
+        <div class="col-lg-4 col-md-4">
+            <div class="card file-tab mb-3">
+                <div class="card-header"><i class="{{ item['icon-class'] }}"></i> {{ _(item['title']) }}</div>
+                <div class="card-body">
+                    <p class="card-text">{{ _(item['description']) }}</p>
+                    <form method="get" action="/converter">
+                        <input type="hidden" name="type" value="{{ key }}">
+                        <div class="row">
+                            <div class="col-9">
+                                <select name="format" class="form-control" required>
+                                    <option value="none">{% trans %}Select target format{% endtrans %}</option>
+                                    {% for filetype in item['ext'] %}
+                                        <option value="{{ filetype }}">
+                                            {{ item["_prefix"] | replace("{}", filetype) | splitpart(0, '_') }}
+                                        </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-success">{% trans %}Go{% endtrans %}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+    <script>
+        $("form:not(#search-form)").on("submit", function(e) {
+            e.preventDefault();
+
+            const type = $(this).find("[name='type']").val();
+            const format = $(this).find("[name='format']").val();
+
+            if(format == "none") {
+                window.location.href = `{{ url('/converter/') }}${type}`;
+            } else {
+                window.location.href = `{{ url('/converter/') }}${type}/${format}`;
+            }
+        })
+    </script>
+{% endblock %}

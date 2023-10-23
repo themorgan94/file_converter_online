@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+{% block title %}
+{% if available_types()[filetype]["category"] == "tool" %}
+    {% if fileformat is defined and fileformat != none %}
+    {{ _(available_types()[filetype]["_prefix"]) | replace("{}", fileformat) | splitpart(0, '_') }}
+    {% else %}
+    {{ available_types()[filetype]["type"] }}
+    {% endif %}
+{% else %}
+    {% if not available_types()[filetype]["_prefix"] %}
+        {% trans %}Convert{% endtrans %} {{filetype}} {% if fileformat is not none %} {% trans %}to the{% endtrans %} {{fileformat}} {% endif %}
+    {% else %}
+        {{ _(available_types()[filetype]["_prefix"]) | replace("{}", fileformat) | replace("-", " ") | splitpart(0, '_') }}
+    {% endif %}
+{% endif %}
+{% endblock %}
+{% block description %}
+    {{ super() }}
+    {{ definitions()[fileformat] }}
+{% endblock %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="/static/css/drop_uploader.css">
+<style>
+    .options-holder-container .je-object__title {
+        font-size: 14px;
+        text-transform: lowercase;
+        color: #55595c;
+        letter-spacing: 1px;
+        font-weight: normal
+    }
+
+    .options-holder-container label::first-letter {
+        text-transform: uppercase;
+    }
+
+    .options-holder-container .form-check {
+        display: inline-block;
+        margin-left: 14px;
+    }
+    .files.ajax li span{
+        width: 0;
+        display: inline-block;
+    }
+    .files.ajax li {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .action-delete{
+        background: #fff;
+        border-radius: 8px;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<div class="--content mt-5">
+    <div class="sidebar">
+        {% include "sidebar.html" %}
+    </div>
+    <div class="main-content">
+        {% with messages = get_flashed_messages(category_filter=["error"]) %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-dismissible alert-danger">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                {{message}}
+            </div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <h4>
+            {% if available_types()[filetype]["category"] == "tool" %}
+                {{ _(available_types()[filetype]["_prefix"]) | replace("{}", fileformat) | splitpart(0, '_') }}
+            {% else %}
+                {% if not available_types()[filetype]["_prefix"] %}
+                    {% trans %}Convert your{% endtrans %} 
+                    {% if "type" in available_types()[filetype] %}
+                        {{ available_types()[filetype]["type"] }}
+                    {% else %}
+                        {{filetype}}
+                    {% endif %} 
+                    {% trans %}to the {{fileformat}} format{% endtrans %}
+                {% else %}
+                    {{ _(available_types()[filetype]["_prefix"]) | replace("{}", fileformat) | replace("-", " ") | splitpart(0, '_') }}
+                {% endif %}
+            {% endif %}
+        </h4>
+        <p> {{ _(definitions()[fileformat]) }} </p>
+        <div class="file-uploader">
+            <label>{% trans %}Upload your files | <small>Max upto </b>10 files</b>, each upto <b>1GB</b></small>{% endtrans %}</label>
+            <input id="uploader" type="file" 
+                name="files" autocomplete="off" 
+                data-method="ajax" data-count="10" 
+                data-maxfilesize="1073741824"
+                {% if available_types()[filetype]['allowed'] | length > 0 %}
+                accept="
+                    {% for allow in available_types()[filetype]['allowed'] %}
+                      {% if available_types()[filetype]['disallowed'] %}
+                        {% if allow not in available_types()[filetype]['disallowed'][fileformat | splitpart(0, '_')] %}
+                            {{'.' + allow.lower()}},
+                        {% endif %}
+                      {% else %}
+                        {{'.' + allow.lower()}},
+                      {% endif %}
+                    {% endfor %}
+                " 
+                {% endif %}
+                multiple>
+        </div>
+        {% if options != "{}" %}
+        <div class="options-holder-container mt-3">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                {% trans %}Customize Settings{% endtrans %}
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div id="options_holder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        <form method="post" id="converter-form" class="mt-3">
+            <input type="hidden" name="options" {% if options == "{}" %} value="{}" {% endif %}>
+            <p>{% trans %}Make sure you have uploaded valid files otherwise conversion will not be correct{% endtrans %}</p>
+            <button id="submit_btn" disabled class="btn btn-primary" type="submit"><i class="fa fa-arrow-circle-right"></i> {% trans %}Convert files{% endtrans %}</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+{% block footer %}
+{{ super() }}
+<script src="/static/js/drop_uploader.js"></script>
+<script>
+    $('input[type=file]').drop_uploader({
+        uploader_text: '{% trans %}Drop files to upload, or{% endtrans %}',
+        browse_text: '{% trans %}Browse{% endtrans %}',
+        only_one_error_text: '{% trans %}Only one file allowed{% endtrans %}',
+        not_allowed_error_text: '{% trans %}File type is not allowed{% endtrans %}',
+        big_file_before_error_text: '{% trans %}Files, bigger than{% endtrans %}',
+        big_file_after_error_text: '{% trans %}is not allowed{% endtrans %}',
+        allowed_before_error_text: '{% trans %}Only{% endtrans %}',
+        allowed_after_error_text: '{% trans %}files allowed{% endtrans %}',
+        browse_css_class: 'btn btn-info',
+        browse_css_selector: 'file_browse',
+        uploader_icon: '<i class="fa fa-cloud-upload"></i>',
+        file_icon: '<i class="fa fa-file"></i>',
+        progress_color: '#4a90e2',
+        time_show_errors: 5,
+        layout: 'list',
+        method: 'ajax',
+        url: '/upload',
+        delete_url: '/upload/remove',
+        btn_selector : '#submit_btn'
+    });
+
+    $("#converter-form").on("submit", function(e){
+        if($("[name='url[]']").length == 0){
+            alert("{% trans %}Please upload some files to continue{% endtrans %}");
+            return false;
+        }
+
+        const errors = editor.validate();
+
+        if (errors.length) {
+            console.log(errors);
+            e.preventDefault();
+        }
+        else {
+            console.log(editor.getValue());
+            $("[name='options']").val(
+                JSON.stringify(editor.getValue())
+            );
+
+            return true; 
+        }
+    });
+
+    
+    window.JSONEditor.defaults.callbacks.template = {
+        "webserviceFilterCB": (jseditor, e) => {
+          if(e.item.includes("{{fileformat}}"))
+            return e.item;
+          return "";
+        }
+      };
+
+    const element = document.getElementById('options_holder');
+    const editor = new JSONEditor(element, {
+        theme: 'bootstrap4',
+        compact: true,
+        disable_edit_json: true,
+        disable_properties: true,
+        disable_collapse: true,
+        use_default_values: false,
+        schema: {{ options | safe  }}
+    });
+</script>
+{% endblock %}

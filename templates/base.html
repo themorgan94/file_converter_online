@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="{{g.lang_code}}">
+
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{% block description %}{% trans %}Find all in one video converter, document, images, audios, pdfs, ebooks, software and much more.{% endtrans %} {% endblock %}">
+    <link rel="icon" type="image/png" href="/static/images/favico.png">
+    
+    <title>{% block title %}{% endblock %} - {% trans %}Free online all in one converter{% endtrans %}</title>
+
+    {% for key, value in supported_languages.items() %}
+        <link rel="alternate" href="{{replace_url_lang(current_url, key, True)}}" hreflang="{{key}}" />
+    {% endfor %}
+    
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"type="text/css" />
+    <link rel="stylesheet" href="/static/css/style.css?v=11" />
+    <!-- add google analytics and google ads code here -->
+
+    <!--/-->
+    {% endblock %}
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{{url('/')}}">
+            <img src="/static/images/inverted_logo.png" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <div class="search-form ml-auto">
+                <form class="navbar-form" id="search-form" role="search" action="/formats">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search" name="q">
+                    </div>
+                </form>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('/')}}">{% trans %}Home{% endtrans %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('/formats')}}">{% trans %}Formats{% endtrans %}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('/about')}}">{% trans %}About{% endtrans %}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('/faq')}}">{% trans %}FAQ{% endtrans %}</a>
+                </li>
+                {% if supported_languages.items()|length > 0 %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i> {{supported_languages[g.lang_code]}}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for key, value in supported_languages.items() %}
+                            <a class="dropdown-item" href="/switch-language/{{key}}">{{value}}</a>
+                        {% endfor %}
+                    </div>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container m-container">
+        {% block content %}{% endblock %}
+    </div>
+    <div style="clear: both;"></div>
+    <section id="footer" class="mt-5 mb-5">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<h5>{% trans %}Information{% endtrans %}</h5>
+					<p class="text-">
+                        {% trans %}This free online file converter lets you convert media easy and fast from one format 
+                        to another. We support a lot of different source formats. If you can't find the 
+                        conversion you need or facing any issue regarding file convertion 
+                        please email us at{% endtrans %} <a href="mailto:mail@example.com">mail@example.com</a>
+                    </p>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>{% trans %}Pages{% endtrans %}</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="{{ url('/') }}"><i class="fa fa-angle-double-right"></i>{% trans %}Home{% endtrans %}</a></li>
+						<li><a href="{{ url('/formats') }}"><i class="fa fa-angle-double-right"></i>{% trans %}Formats{% endtrans %}</a></li>
+						<li><a href="{{ url('/faq') }}"><i class="fa fa-angle-double-right"></i>{% trans %}FAQ{% endtrans %}</a></li>
+						<li><a href="{{ url('/about') }}"><i class="fa fa-angle-double-right"></i>{% trans %}About{% endtrans %}</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>{% trans %}Links{% endtrans %}</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="{{ url('/privacy') }}"><i class="fa fa-angle-double-right"></i>{% trans %}Privacy Policy{% endtrans %}</a></li>
+						<li><a href="{{ url('/disclaimer') }}"><i class="fa fa-angle-double-right"></i>{% trans %}Disclaimer{% endtrans %}</a></li>
+                    </ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5 text-center">
+                    <p>{% trans %}for feedback, suggestions and problems email us {% endtrans %}
+                        <br> <a href="mailto:mail@example.com">mail@example.com</a>
+                    </p>
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li class="list-inline-item"><a href="mailto:mail@example.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p class="h6">© {% trans %}All rights reserved.{% endtrans %}</p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+    {% block footer %}
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+    
+    <script>
+        $('.sidebar-btn').click(function(e) {
+            if($(".sidebar-content").is(":visible"))
+                $('.sidebar-content').slideUp();
+            else
+                $('.sidebar-content').slideDown();
+        });
+
+        $("#navbarColor02 a").each(function(i, v){
+            if($(this).attr("href") == window.location.pathname){
+                $(this).parent().addClass("active")
+            }
+        });
+    </script>
+    {% endblock %}
+</body>
+
+</html>

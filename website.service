@@ -1,0 +1,13 @@
+[Unit]
+Description=All in one video converter
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=<<app_directory>>
+ExecStart=gunicorn wsgi
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
